@@ -1,0 +1,41 @@
+# Clock topic for synchronization
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS
+
+# RGB image topic
+- ros_topic_name: "camera_front_sensor/color"
+  gz_topic_name: "/world/new_world/model/X3/link/base_link/sensor/camera_front/image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# Depth image topic
+- ros_topic_name: "camera_front_sensor/depth_image"
+  gz_topic_name: "/world/new_world/model/X3/link/base_link/sensor/camera_front/depth_image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# # Point cloud back sensor
+- ros_topic_name: "scan/points"
+  gz_topic_name: "/world/new_world/model/X3/link/base_link/sensor/camera_front/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
+# # Point cloud front sensor
+# - ros_topic_name: "scan_front/scan/points"
+#   gz_topic_name: "/world/world_demo/model/tugbot/link/scan_front/sensor/scan_front/scan/points"
+#   ros_type_name: "sensor_msgs/msg/PointCloud2"
+#   gz_type_name: "gz.msgs.PointCloudPacked"
+#   direction: GZ_TO_ROS
+
+# # Point cloud omni sensor
+# - ros_topic_name: "scan_omni/scan/points"
+#   gz_topic_name: "/world/world_demo/model/tugbot/link/scan_omni/sensor/scan_omni/scan/points"
+#   ros_type_name: "sensor_msgs/msg/PointCloud2"
+#   gz_type_name: "gz.msgs.PointCloudPacked"
+#   direction: GZ_TO_ROS
